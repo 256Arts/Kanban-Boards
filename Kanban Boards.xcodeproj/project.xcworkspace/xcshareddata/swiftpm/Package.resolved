@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "jaydencodegenerator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JaydenIrwin/JaydenCodeGenerator",
+      "state" : {
+        "revision" : "f83b4099f6141090ab81ae42a09b6a52aa03cde9",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "notionswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chojnac/NotionSwift",
+      "state" : {
+        "revision" : "608f52502336244948310597fb7a01cd97b26680",
+        "version" : "0.7.2"
+      }
+    },
+    {
+      "identity" : "swiftui-cached-async-image",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lorenzofiamingo/swiftui-cached-async-image",
+      "state" : {
+        "revision" : "467a3d17479887943ab917a379e62bbaff60ac8a",
+        "version" : "2.1.1"
+      }
+    }
+  ],
+  "version" : 2
+}

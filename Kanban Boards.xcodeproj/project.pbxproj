@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B8A1BEE281EDB2500C4DA1F /* Kanban_BoardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1BDE281EDB2300C4DA1F /* Kanban_BoardsApp.swift */; };
+		1B8A1BF2281EDB2500C4DA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8A1BE0281EDB2500C4DA1F /* Assets.xcassets */; };
+		1B8A1BFE281EDBFE00C4DA1F /* NotionSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1B8A1BFD281EDBFE00C4DA1F /* NotionSwift */; };
+		1B8A1C00281EDCF300C4DA1F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1BFF281EDCF300C4DA1F /* UserDefaults.swift */; };
+		1B8A1C03281EDD7D00C4DA1F /* NotionIntegrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C02281EDD7D00C4DA1F /* NotionIntegrationView.swift */; };
+		1B8A1C06281EDF1900C4DA1F /* BoardsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C05281EDF1900C4DA1F /* BoardsList.swift */; };
+		1B8A1C09281EDF7700C4DA1F /* NotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C08281EDF7700C4DA1F /* NotionController.swift */; };
+		1B8A1C0D281EE6A400C4DA1F /* ColumnsTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C0C281EE6A400C4DA1F /* ColumnsTabBar.swift */; };
+		1B8A1C10281EE83600C4DA1F /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C0F281EE83600C4DA1F /* BoardView.swift */; };
+		1B8A1C13281F386C00C4DA1F /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C12281F386C00C4DA1F /* Board.swift */; };
+		1B8A1C16281F40D600C4DA1F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C15281F40D600C4DA1F /* Item.swift */; };
+		1B8A1C19281F814900C4DA1F /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C18281F814900C4DA1F /* ItemDetailView.swift */; };
+		1B8A1C1F2820EA5100C4DA1F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C1E2820EA5100C4DA1F /* WelcomeView.swift */; };
+		1B8A1C222821E9FE00C4DA1F /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C212821E9FE00C4DA1F /* Column.swift */; };
+		1B8A1C252822101700C4DA1F /* CloudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C242822101700C4DA1F /* CloudController.swift */; };
+		1B8A1C2828221C0800C4DA1F /* BoardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A1C2728221C0800C4DA1F /* BoardsController.swift */; };
+		1B8C86D8283F1D8E00EEC921 /* JaydenCodeGenerator in Frameworks */ = {isa = PBXBuildFile; productRef = 1B8C86D7283F1D8E00EEC921 /* JaydenCodeGenerator */; };
+		1BBC82B9287783A200220E6A /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC82B8287783A200220E6A /* ItemRowView.swift */; };
+		3529EC5728201CE10005D0BE /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3529EC5628201CE10005D0BE /* CachedAsyncImage */; };
+		353A528B28207586004C447A /* CreateBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A528A28207586004C447A /* CreateBoardView.swift */; };
+		353A528E282078FC004C447A /* AnyPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A528D282078FC004C447A /* AnyPublisher.swift */; };
+		353A5291282089C9004C447A /* CreateColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A5290282089C9004C447A /* CreateColumnView.swift */; };
+		35EDC2BA28204B2200E26F11 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EDC2B928204B2200E26F11 /* SettingsView.swift */; };
+		35EDC2BD282054E700E26F11 /* ItemsColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EDC2BC282054E700E26F11 /* ItemsColumnView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B5197862852E63C006C0403 /* Kanban-Boards--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Kanban-Boards--iOS--Info.plist"; sourceTree = "<group>"; };
+		1B8A1BDE281EDB2300C4DA1F /* Kanban_BoardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanban_BoardsApp.swift; sourceTree = "<group>"; };
+		1B8A1BE0281EDB2500C4DA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B8A1BE5281EDB2500C4DA1F /* Kanban Boards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kanban Boards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B8A1BED281EDB2500C4DA1F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		1B8A1BFF281EDCF300C4DA1F /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		1B8A1C02281EDD7D00C4DA1F /* NotionIntegrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotionIntegrationView.swift; sourceTree = "<group>"; };
+		1B8A1C05281EDF1900C4DA1F /* BoardsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardsList.swift; sourceTree = "<group>"; };
+		1B8A1C08281EDF7700C4DA1F /* NotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotionController.swift; sourceTree = "<group>"; };
+		1B8A1C0C281EE6A400C4DA1F /* ColumnsTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnsTabBar.swift; sourceTree = "<group>"; };
+		1B8A1C0F281EE83600C4DA1F /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		1B8A1C12281F386C00C4DA1F /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		1B8A1C15281F40D600C4DA1F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		1B8A1C18281F814900C4DA1F /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		1B8A1C1E2820EA5100C4DA1F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1B8A1C212821E9FE00C4DA1F /* Column.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
+		1B8A1C242822101700C4DA1F /* CloudController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudController.swift; sourceTree = "<group>"; };
+		1B8A1C2728221C0800C4DA1F /* BoardsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardsController.swift; sourceTree = "<group>"; };
+		1B8A1C2A28221F3100C4DA1F /* Kanban Boards (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kanban Boards (iOS).entitlements"; sourceTree = "<group>"; };
+		1BBC82B8287783A200220E6A /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		353A528A28207586004C447A /* CreateBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoardView.swift; sourceTree = "<group>"; };
+		353A528D282078FC004C447A /* AnyPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPublisher.swift; sourceTree = "<group>"; };
+		353A5290282089C9004C447A /* CreateColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateColumnView.swift; sourceTree = "<group>"; };
+		35EDC2B928204B2200E26F11 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		35EDC2BC282054E700E26F11 /* ItemsColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsColumnView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B8A1BE2281EDB2500C4DA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8A1BFE281EDBFE00C4DA1F /* NotionSwift in Frameworks */,
+				1B8C86D8283F1D8E00EEC921 /* JaydenCodeGenerator in Frameworks */,
+				3529EC5728201CE10005D0BE /* CachedAsyncImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B8A1BD8281EDB2300C4DA1F = {
+			isa = PBXGroup;
+			children = (
+				1B5197862852E63C006C0403 /* Kanban-Boards--iOS--Info.plist */,
+				1B8A1C2A28221F3100C4DA1F /* Kanban Boards (iOS).entitlements */,
+				1B8A1BDD281EDB2300C4DA1F /* Shared */,
+				1B8A1BEC281EDB2500C4DA1F /* macOS */,
+				1B8A1BE6281EDB2500C4DA1F /* Products */,
+				1B8A1C2C28236C6600C4DA1F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1B8A1BDD281EDB2300C4DA1F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1B8A1BDE281EDB2300C4DA1F /* Kanban_BoardsApp.swift */,
+				1B8A1C1E2820EA5100C4DA1F /* WelcomeView.swift */,
+				35EDC2B928204B2200E26F11 /* SettingsView.swift */,
+				1B8A1C02281EDD7D00C4DA1F /* NotionIntegrationView.swift */,
+				1B8A1C05281EDF1900C4DA1F /* BoardsList.swift */,
+				353A528A28207586004C447A /* CreateBoardView.swift */,
+				1B8A1C0F281EE83600C4DA1F /* BoardView.swift */,
+				35EDC2BC282054E700E26F11 /* ItemsColumnView.swift */,
+				1BBC82B8287783A200220E6A /* ItemRowView.swift */,
+				353A5290282089C9004C447A /* CreateColumnView.swift */,
+				1B8A1C0C281EE6A400C4DA1F /* ColumnsTabBar.swift */,
+				1B8A1C18281F814900C4DA1F /* ItemDetailView.swift */,
+				1B8A1C2B28221F8500C4DA1F /* Controllers */,
+				1B8A1C0B281EDF7D00C4DA1F /* Models */,
+				1B8A1BE0281EDB2500C4DA1F /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1B8A1BE6281EDB2500C4DA1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B8A1BE5281EDB2500C4DA1F /* Kanban Boards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B8A1BEC281EDB2500C4DA1F /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1B8A1BED281EDB2500C4DA1F /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		1B8A1C0B281EDF7D00C4DA1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B8A1C12281F386C00C4DA1F /* Board.swift */,
+				1B8A1C15281F40D600C4DA1F /* Item.swift */,
+				1B8A1C212821E9FE00C4DA1F /* Column.swift */,
+				353A528D282078FC004C447A /* AnyPublisher.swift */,
+				1B8A1BFF281EDCF300C4DA1F /* UserDefaults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B8A1C2B28221F8500C4DA1F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B8A1C2728221C0800C4DA1F /* BoardsController.swift */,
+				1B8A1C242822101700C4DA1F /* CloudController.swift */,
+				1B8A1C08281EDF7700C4DA1F /* NotionController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1B8A1C2C28236C6600C4DA1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B8A1BE4281EDB2500C4DA1F /* Kanban Boards (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B8A1BF6281EDB2500C4DA1F /* Build configuration list for PBXNativeTarget "Kanban Boards (iOS)" */;
+			buildPhases = (
+				1B8A1BE1281EDB2500C4DA1F /* Sources */,
+				1B8A1BE2281EDB2500C4DA1F /* Frameworks */,
+				1B8A1BE3281EDB2500C4DA1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kanban Boards (iOS)";
+			packageProductDependencies = (
+				1B8A1BFD281EDBFE00C4DA1F /* NotionSwift */,
+				3529EC5628201CE10005D0BE /* CachedAsyncImage */,
+				1B8C86D7283F1D8E00EEC921 /* JaydenCodeGenerator */,
+			);
+			productName = "Kanban Boards (iOS)";
+			productReference = 1B8A1BE5281EDB2500C4DA1F /* Kanban Boards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B8A1BD9281EDB2300C4DA1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					1B8A1BE4281EDB2500C4DA1F = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1B8A1BDC281EDB2300C4DA1F /* Build configuration list for PBXProject "Kanban Boards" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B8A1BD8281EDB2300C4DA1F;
+			packageReferences = (
+				1B8A1BFC281EDBFE00C4DA1F /* XCRemoteSwiftPackageReference "NotionSwift" */,
+				3529EC5528201CE10005D0BE /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				1B8C86D6283F1D8E00EEC921 /* XCRemoteSwiftPackageReference "JaydenCodeGenerator" */,
+			);
+			productRefGroup = 1B8A1BE6281EDB2500C4DA1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B8A1BE4281EDB2500C4DA1F /* Kanban Boards (iOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B8A1BE3281EDB2500C4DA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8A1BF2281EDB2500C4DA1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B8A1BE1281EDB2500C4DA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8A1C10281EE83600C4DA1F /* BoardView.swift in Sources */,
+				1B8A1C16281F40D600C4DA1F /* Item.swift in Sources */,
+				1B8A1BEE281EDB2500C4DA1F /* Kanban_BoardsApp.swift in Sources */,
+				1B8A1C1F2820EA5100C4DA1F /* WelcomeView.swift in Sources */,
+				35EDC2BD282054E700E26F11 /* ItemsColumnView.swift in Sources */,
+				353A5291282089C9004C447A /* CreateColumnView.swift in Sources */,
+				1B8A1C19281F814900C4DA1F /* ItemDetailView.swift in Sources */,
+				1B8A1C252822101700C4DA1F /* CloudController.swift in Sources */,
+				1B8A1C06281EDF1900C4DA1F /* BoardsList.swift in Sources */,
+				1B8A1C00281EDCF300C4DA1F /* UserDefaults.swift in Sources */,
+				1B8A1C0D281EE6A400C4DA1F /* ColumnsTabBar.swift in Sources */,
+				1B8A1C09281EDF7700C4DA1F /* NotionController.swift in Sources */,
+				1B8A1C13281F386C00C4DA1F /* Board.swift in Sources */,
+				1B8A1C2828221C0800C4DA1F /* BoardsController.swift in Sources */,
+				1BBC82B9287783A200220E6A /* ItemRowView.swift in Sources */,
+				1B8A1C03281EDD7D00C4DA1F /* NotionIntegrationView.swift in Sources */,
+				353A528E282078FC004C447A /* AnyPublisher.swift in Sources */,
+				353A528B28207586004C447A /* CreateBoardView.swift in Sources */,
+				1B8A1C222821E9FE00C4DA1F /* Column.swift in Sources */,
+				35EDC2BA28204B2200E26F11 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1B8A1BF4281EDB2500C4DA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B8A1BF5281EDB2500C4DA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1B8A1BF7281EDB2500C4DA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Kanban Boards (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VA3SY54YU8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kanban-Boards--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaydenirwin.kanbanboards;
+				PRODUCT_NAME = "Kanban Boards";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		1B8A1BF8281EDB2500C4DA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Kanban Boards (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VA3SY54YU8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kanban-Boards--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaydenirwin.kanbanboards;
+				PRODUCT_NAME = "Kanban Boards";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B8A1BDC281EDB2300C4DA1F /* Build configuration list for PBXProject "Kanban Boards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B8A1BF4281EDB2500C4DA1F /* Debug */,
+				1B8A1BF5281EDB2500C4DA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B8A1BF6281EDB2500C4DA1F /* Build configuration list for PBXNativeTarget "Kanban Boards (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B8A1BF7281EDB2500C4DA1F /* Debug */,
+				1B8A1BF8281EDB2500C4DA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B8A1BFC281EDBFE00C4DA1F /* XCRemoteSwiftPackageReference "NotionSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chojnac/NotionSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+		1B8C86D6283F1D8E00EEC921 /* XCRemoteSwiftPackageReference "JaydenCodeGenerator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JaydenIrwin/JaydenCodeGenerator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		3529EC5528201CE10005D0BE /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B8A1BFD281EDBFE00C4DA1F /* NotionSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B8A1BFC281EDBFE00C4DA1F /* XCRemoteSwiftPackageReference "NotionSwift" */;
+			productName = NotionSwift;
+		};
+		1B8C86D7283F1D8E00EEC921 /* JaydenCodeGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B8C86D6283F1D8E00EEC921 /* XCRemoteSwiftPackageReference "JaydenCodeGenerator" */;
+			productName = JaydenCodeGenerator;
+		};
+		3529EC5628201CE10005D0BE /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3529EC5528201CE10005D0BE /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1B8A1BD9281EDB2300C4DA1F /* Project object */;
+}
